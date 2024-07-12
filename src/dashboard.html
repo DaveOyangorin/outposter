@@ -193,12 +193,12 @@
 
                 <table class="table  ">
                     <thead>
-                        <tr>
-                            <th scope="col"></th>
-                            <th scope="col" class="w-30">Task ID</th>
-                            <th scope="col">Status</th>
-                            <th scope="col">Assigned On</th>
-                            <th scope="col">Options</th>
+                        <tr >
+                            <th scope="col" class="table-th-background"></th>
+                            <th scope="col" class="w-30 table-th-background">Task ID</th>
+                            <th scope="col" class="table-th-background">Status</th>
+                            <th scope="col" class="table-th-background">Assigned On</th>
+                            <th scope="col" class="table-th-background">Options</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -782,6 +782,11 @@
         width: 180px;
     }
 
+    .table>:not(caption)>*>* {
+   
+    background-color: #F5FFFF;
+   
+}
     .page-link{
         font-family: "Nunito", sans-serif;
         font-size: 14px;
@@ -791,5 +796,9 @@
     .page-link:hover{
         background-color: #06A9A9;
         color: white;
+    }
+
+    .table-th-background{
+        background-color: white !important;
     }
 </style>
